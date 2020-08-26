@@ -12,6 +12,7 @@ import { VehicleComponent } from './components/vehicle/vehicle.component';
 import { SelectionFormComponent } from './components/selection-form/selection-form.component';
 import { AuthguardService } from './services/authguard.service';
 import { HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { HttpClientModule} from '@angular/common/http';
     FindComponent,
     ResultComponent,
     VehicleComponent,
-    SelectionFormComponent
+    SelectionFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
