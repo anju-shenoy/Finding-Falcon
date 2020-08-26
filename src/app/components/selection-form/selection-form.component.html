@@ -1,0 +1,21 @@
+
+<form class="form">
+  <div class="card">
+      <div class="card-header">
+         
+          <h5 class="text-center">{{selectedPlanet.name ? (selectedPlanet.name | uppercase) : "Select Planet"}}</h5>
+          <h6 class="text-center"> Distance : {{selectedPlanet.distance || "0" }} </h6>
+
+          <div class="form-group">
+              <select class="form-control" name="planet" (change)="updateSelectedPlanet($event)">
+                  <option value="">Select Planet</option>
+                  <option *ngFor="let item of planetList" [value]="item.name">{{item.name}}</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="card-body">
+          <app-vehicle [selectedPlanet]="selectedPlanet"></app-vehicle>
+      </div>
+  </div>
+</form>

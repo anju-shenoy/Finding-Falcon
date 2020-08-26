@@ -1,0 +1,25 @@
+.card{
+  border-radius: 4px;
+}
+
+.card-header{
+  background : none;
+  padding: 0.25rem 1.25rem;
+}
+
+.card-header .img-bound{
+  padding-left:calc(100%/4);
+  padding-right:calc(100%/4);
+}
+
+.card-header h5{
+  margin-top:5px;
+}
+
+.card-body{
+  padding:0;
+}
+
+.form-group{
+  margin-bottom: 0.5rem;
+}
